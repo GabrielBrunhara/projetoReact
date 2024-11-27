@@ -2,108 +2,43 @@ import logo from './sapone.png';
 import './App.css';
 import { Component } from 'react';
 
-class App extends Component{
+class App extends Component {
 
-  /* constructor(props){
-    super(props);
+  state = {
+    posts: [
+      {
+        id: 1,
+        tittle: 'Dom',
+        body: 'Sapone1'
+      },
+      {
+        id: 2,
+        tittle: 'Dona',
+        body: 'Sapone2'
+      },
+      {
+        id: 3,
+        tittle: 'Donim',
+        body: 'sapone3'
+      },
+    ]
+  };
 
-    this.handlePClick = this.handlePClick.bind(this); 
+  render() {
 
-    this.state = {
-      name: 'Dom Sapone',
-      counter: 0
-    };
-  } */
-
-    state = {
-      name: 'Dom Sapone',
-      counter: 0
-    };
-
-  handlePClick = (name) => {
-    if(name === 'Dom Sapone'){
-    this.setState({ name: 'Dom Sapones' });
-    }else{
-      this.setState({ name: 'Dom Sapone' });
-    }
-    console.log("O Mais Pica");
-  }
-
-  handleAClick = (event) => {
-    event.preventDefault();
-    const {counter} = this.state;
-    this.setState({counter: counter + 1})
-  }
-
-  render(){
-
-    //const name = this.state.name;
-    const {name, counter} = this.state;
+    const { posts } = this.state;
 
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p onClick={() => this.handlePClick(name)}>
-            {name} {counter}
-          </p>
-          <a
-            className="App-link"
-            href="https://www.tiktok.com/@domsapone"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            TikTok
-          </a>
-          <a
-            className="App-link"
-            href="https://www.instagram.com/dom_sapone"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Instagram
-          </a>
-          <a 
-          onClick={this.handleAClick}
-            className='App-link'
-            href='.'
-            target='blank'
-          >
-            Plus
-          </a>
-        </header>
+        {posts.map(post => (
+          <div key={post.id}>
+            <h1 className='App-link'> {post.tittle} </h1>
+            <p> {post.body} </p>
+          </div>
+        ))}
       </div>
     );
   }
 }
-
-/* function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Dom sapone
-        </p>
-        <a
-          className="App-link"
-          href="https://www.tiktok.com/@domsapone"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          TikTok
-        </a>
-        <a
-          className="App-link"
-          href="https://www.instagram.com/dom_sapone"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Instagram
-        </a>
-      </header>
-    </div>
-  );
-} */
 
 export default App;

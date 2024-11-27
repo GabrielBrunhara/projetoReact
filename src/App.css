@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  user-select: none;
 }
 
 .App-logo {
@@ -22,11 +23,9 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-  user-select: none;
 }
 
 .App-link {
-  padding-bottom: 20px;
   color: rgb(10, 228, 90);
   text-decoration: overline;
 }
