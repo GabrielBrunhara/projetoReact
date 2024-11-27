@@ -11,11 +11,19 @@ function App() {
         </p>
         <a
           className="App-link"
-          href="https://www.tiktok.com/@_clip_n_chill"
+          href="https://www.tiktok.com/@domsapone"
           target="_blank"
           rel="noopener noreferrer"
         >
           TikTok
+        </a>
+        <a
+          className="App-link"
+          href="https://www.instagram.com/dom_sapone"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Instagram
         </a>
       </header>
     </div>
