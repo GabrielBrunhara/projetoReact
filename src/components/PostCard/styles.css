@@ -1,40 +1,50 @@
-.post-card{
-    background: white;
-    box-shadow: 0 0 10px rgb(0, 0, 0, 0.2);
-    transition: transform 100ms ease-in-out;
-    animation: spin 0.5s linear;
+.post-card {
+  background: white;
+  box-shadow: 0 0 10px rgb(0, 0, 0, 0.2);
+  transition: transform 100ms ease-in-out;
+  animation: spin 0.5s linear;
+}
+
+@keyframes spin {
+  0% {
+    transform: translate(0);
   }
-  
-  @keyframes spin {
-    0% {
-      transform: translate(0);
-    }
-    20% {
-      transform: translate(-5px, 5px);
-    }
-    40% {
-      transform: translate(5px, -5px);
-    }
-    60% {
-      transform: translate(-5px, -5px);
-    }
-    80% {
-      transform: translate(5px, 5px);
-    }
-    100% {
-      transform: translate(0);
-    }
+
+  20% {
+    transform: translate(-5px, 5px);
   }
-  
-  .post-card:hover{
-    transform: scale(1.05);
-    box-shadow: -9px 9px 10px rgba(0, 0, 0, 0.4);
+
+  40% {
+    transform: translate(5px, -5px);
   }
-  
-  .post-card img{
-    max-width: 100%;
+
+  60% {
+    transform: translate(-5px, -5px);
   }
-  
-  .post-card-content{
-    padding: 30px;
+
+  80% {
+    transform: translate(5px, 5px);
   }
+
+  100% {
+    transform: translate(0);
+  }
+}
+
+.single-post .post-card:hover {
+  transform: none;
+  box-shadow: 0 0 10px rgb(0, 0, 0, 0.2);
+}
+
+.post-card:hover {
+  transform: scale(1.05);
+  box-shadow: -9px 9px 10px rgba(0, 0, 0, 0.4);
+}
+
+.post-card img {
+  max-width: 100%;
+}
+
+.post-card-content {
+  padding: 30px;
+}

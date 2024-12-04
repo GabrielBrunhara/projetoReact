@@ -14,7 +14,7 @@ export class Home extends Component {
     posts: [],
     allPosts: [],
     page: 0,
-    postsPerPage: 6,
+    postsPerPage: 4,
     searchValue: ''
   };
 
@@ -92,8 +92,6 @@ export class Home extends Component {
         ) : (
           <p className='message'>No results for <br /> "{searchValue}"</p>
         )}
-
-
 
         <div className='button-container'>
           {!searchValue && (
