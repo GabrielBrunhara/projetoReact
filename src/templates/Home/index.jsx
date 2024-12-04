@@ -85,6 +85,7 @@ export class Home extends Component {
           placeholder='Search'
           value={searchValue}
           onChange={this.handleChange}
+          onFocus='Type something'
         />
 
         {filteredPosts.length > 0 ? (
