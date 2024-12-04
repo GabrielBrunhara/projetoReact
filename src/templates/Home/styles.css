@@ -8,6 +8,18 @@
   justify-content: space-between;
 }
 
+.message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  font-size: 30px;
+  font-weight: bold;
+  color: green;
+  text-align: center;
+}
+
+
 .button-container {
   padding-bottom: 30px;
   display: flex;

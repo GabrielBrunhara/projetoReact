@@ -6,6 +6,7 @@ import './styles.css';
 import { Posts } from '../../components/Posts';
 import { loadPosts } from '../../utils/load-posts';
 import { Button } from '../../components/Button';
+import { Search } from '../../components/Search/';
 
 export class Home extends Component {
 
@@ -13,7 +14,8 @@ export class Home extends Component {
     posts: [],
     allPosts: [],
     page: 0,
-    postsPerPage: 2
+    postsPerPage: 2,
+    searchValue: ''
   };
 
   async componentDidMount() {
@@ -31,7 +33,7 @@ export class Home extends Component {
     });
   }
 
-  nextPage = () => {
+  handleNextPage = () => {
     const {
       //posts,
       allPosts,
@@ -50,7 +52,7 @@ export class Home extends Component {
 
   }
 
-  previousPage = () => {
+  handlePreviousPage = () => {
     const { allPosts, page, postsPerPage } = this.state;
 
     const previousPage = Math.max(page - postsPerPage, 0);
@@ -59,25 +61,55 @@ export class Home extends Component {
     this.setState({ posts: previousPosts, page: previousPage });
   };
 
+  handleChange = (event) => {
+    const { value } = event.target;
+
+    this.setState({ searchValue: value })
+  }
+
   render() {
 
-    const { posts, allPosts, page, postsPerPage } = this.state;
+    const { posts, allPosts, page, postsPerPage, searchValue } = this.state;
     const noMorePages = page + postsPerPage >= allPosts.length
+
+    const filteredPosts = !!searchValue ?
+      allPosts.filter(post => {
+        return post.title.toLowerCase().includes(searchValue.toLowerCase())
+      })
+      : posts;
 
     return (
       <section className='container'>
-        <Posts posts={posts} />
+
+        <Search
+          placeholder='Search'
+          value={searchValue}
+          onChange={this.handleChange}
+        />
+
+        {filteredPosts.length > 0 ? (
+          <Posts posts={filteredPosts} />
+        ) : (
+          <p className='message'>No results for <br /> "{searchValue}"</p>
+        )}
+
+
+
         <div className='button-container'>
-          <Button
-            disabled={page === 0}
-            text='Voltar'
-            onclick={this.previousPage}
-          />
-          <Button
-            disabled={noMorePages}
-            text='Avançar'
-            onclick={this.nextPage}
-          />
+          {!searchValue && (
+            <>
+              <Button
+                disabled={page === 0}
+                text='←'
+                onclick={this.handlePreviousPage}
+              />
+              <Button
+                disabled={noMorePages}
+                text='→'
+                onclick={this.handleNextPage}
+              />
+            </>
+          )}
         </div>
       </section>
     );
