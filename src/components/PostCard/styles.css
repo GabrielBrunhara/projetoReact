@@ -2,10 +2,10 @@
   background: white;
   box-shadow: 0 0 10px rgb(0, 0, 0, 0.2);
   transition: transform 100ms ease-in-out;
-  animation: spin 0.5s linear;
+  animation: bug 0.5s linear;
 }
 
-@keyframes spin {
+@keyframes bug {
   0% {
     transform: translate(0);
   }

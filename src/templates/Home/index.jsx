@@ -7,6 +7,7 @@ import { Posts } from '../../components/Posts';
 import { loadPosts } from '../../utils/load-posts';
 import { Button } from '../../components/Button';
 import { Search } from '../../components/Search/';
+import { Loading } from '../../components/Loading';
 
 export class Home extends Component {
 
@@ -15,7 +16,8 @@ export class Home extends Component {
     allPosts: [],
     page: 0,
     postsPerPage: 4,
-    searchValue: ''
+    searchValue: '',
+    isLoading: true
   };
 
   async componentDidMount() {
@@ -23,13 +25,15 @@ export class Home extends Component {
   }
 
   loadPosts = async () => {
+    this.setState({ isLoading: true });
 
     const { page, postsPerPage } = this.state;
-
     const postsAndPhotos = await loadPosts();
+
     this.setState({
       posts: postsAndPhotos.slice(page, postsPerPage),
       allPosts: postsAndPhotos,
+      isLoading: false,
     });
   }
 
@@ -69,7 +73,7 @@ export class Home extends Component {
 
   render() {
 
-    const { posts, allPosts, page, postsPerPage, searchValue } = this.state;
+    const { posts, allPosts, page, postsPerPage, searchValue, isLoading } = this.state;
     const noMorePages = page + postsPerPage >= allPosts.length
 
     const filteredPosts = !!searchValue ?
@@ -88,7 +92,9 @@ export class Home extends Component {
           onFocus='Type something'
         />
 
-        {filteredPosts.length > 0 ? (
+        {isLoading ? (
+          <Loading />
+        ) : filteredPosts.length > 0 || searchValue === '' ? (
           <Posts posts={filteredPosts} />
         ) : (
           <p className='message'>No results for <br /> "{searchValue}"</p>
