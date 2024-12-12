@@ -1,7 +1,7 @@
 import P from 'prop-types';
 import './styles.css';
 
-export const Search = ({ placeholder, value, onChange, onFocus }) => {
+export const Search = ({ placeholder = 'Search', value, onChange, onFocus = 'Type something...' }) => {
   const handleFocus = (e) => {
     e.target.placeholder = onFocus;
   };
@@ -24,8 +24,8 @@ export const Search = ({ placeholder, value, onChange, onFocus }) => {
 };
 
 Search.propTypes = {
-  placeholder: P.string.isRequired,
+  placeholder: P.string,
+  onFocus: P.string,
   value: P.string.isRequired,
   onChange: P.func.isRequired,
-  onFocus: P.string.isRequired,
 };

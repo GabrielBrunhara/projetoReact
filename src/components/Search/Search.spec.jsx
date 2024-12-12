@@ -7,9 +7,9 @@ import { Search } from '.';
 describe('<Search />', () => {
   it('Should render Search correctly', () => {
     const fn = vi.fn();
-    render(<Search placeholder="Test search" value="Test something" onChange={fn} onFocus="Test type something..." />);
+    render(<Search value="Test something" onChange={fn} />);
 
-    const search = screen.getByPlaceholderText('Test search');
+    const search = screen.getByDisplayValue('Test something');
 
     expect(search).toBeInTheDocument();
     expect(search.value).toBe('Test something');
@@ -30,9 +30,9 @@ describe('<Search />', () => {
 
   it('Should call handleChange function on each key pressed', async () => {
     const fn = vi.fn();
-    render(<Search placeholder="Test search" value="Test something" onChange={fn} onFocus="Test type something..." />);
+    render(<Search value="Test something" onChange={fn} />);
 
-    const search = screen.getByPlaceholderText('Test search');
+    const search = screen.getByDisplayValue('Test something');
     const value = 'test input search';
 
     await userEvent.type(search, value);
