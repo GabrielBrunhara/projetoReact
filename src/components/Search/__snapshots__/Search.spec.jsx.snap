@@ -1,0 +1,12 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`<Search /> > Should match snapshot 1`] = `
+<div>
+  <input
+    class="search"
+    placeholder="Test search"
+    type="search"
+    value="Test something"
+  />
+</div>
+`;

@@ -1,0 +1,35 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`<PostCard /> > Should match snapshot 1`] = `
+<div>
+  <div
+    class="post-card"
+  >
+    <img
+      alt="test title"
+      src="img/img.png"
+    />
+    <div
+      class="post-card-content"
+    >
+      <h2>
+         
+        test title
+         
+      </h2>
+      <br />
+      <h3>
+        Id: 
+        1
+         
+      </h3>
+      <br />
+      <p>
+         
+        test body
+         
+      </p>
+    </div>
+  </div>
+</div>
+`;
