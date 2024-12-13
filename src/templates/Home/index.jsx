@@ -73,9 +73,7 @@ export const Home = () => {
       ) : filteredPosts.length > 0 || searchValue === '' ? (
         <Posts posts={filteredPosts} />
       ) : (
-        <p className="message">
-          No results for: <br /> "{searchValue}"
-        </p>
+        <p className="message">No results for: "{searchValue}"</p>
       )}
 
       <div className="button-container">
