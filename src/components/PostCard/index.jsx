@@ -20,22 +20,3 @@ PostCard.propTypes = {
   cover: P.string.isRequired,
   id: P.number.isRequired,
 };
-
-/**
-export const PostCard = ({post} ou props) => { - passando o props inteiro
-    //const post = props.post;
-    //ou
-    //const {post} = props;
-    
-    //return útil apenas se tiver alguma lógica/função aqui.
-
-    return (
-        <div className="post">
-            <img src={post.cover} alt={post.title} />
-            <div key={post.id} className='post-content'>
-                <h1> {post.title} </h1>
-                <p> {post.body} </p>
-            </div>
-        </div>
-    );
-}*/
