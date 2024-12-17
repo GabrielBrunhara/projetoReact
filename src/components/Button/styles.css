@@ -5,7 +5,6 @@
   font-family: sans-serif;
   font-size: 18px;
   border: 1px solid #ccc;
-  border-radius: 10px;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
   padding: 15px 50px;
   transition: all 0.3s;
@@ -23,12 +22,12 @@
 }
 
 .button:hover {
-  filter: drop-shadow(0 0 1em rgba(0, 128, 0, 0.582));
+  filter: drop-shadow(0 0 1.5em rgba(0, 128, 0, 0.582));
 }
 
 .button:before {
   content: '';
-  background-color: rgb(1, 180, 1);
+  background-color: rgb(34, 233, 34);
   top: 0;
   left: 0;
   width: 100%;
@@ -53,7 +52,7 @@
 }
 
 button:disabled::before{
-  background-color: rgb(180, 1, 1);
+  background-color: rgb(255, 0, 0);
 }
 
 .button:disabled {
@@ -61,7 +60,7 @@ button:disabled::before{
   cursor: not-allowed;
 }
 .button:disabled:hover {
-  filter: drop-shadow(0 0 1em rgb(199, 63, 63));
+  filter: drop-shadow(0 0 1.5em rgb(199, 63, 63));
 }
 
 /* .button {

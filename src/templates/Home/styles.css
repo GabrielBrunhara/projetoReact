@@ -3,6 +3,7 @@
   margin: 0 auto; */
   min-height: 100vh;
   background: rgb(236, 236, 236);
+  background: #818181;
   display: flex;
   flex-direction: column;
   justify-content: space-between;

@@ -9,8 +9,8 @@ span
     position: absolute;
     width: 20px;
     height: 20px;
-    background-color:green;
-    border-radius: 50px;
+    background-color:rgb(34, 233, 34);
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
     animation: chase 2s linear infinite;
 
 }
