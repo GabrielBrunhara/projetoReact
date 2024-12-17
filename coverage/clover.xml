@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1734060243164" clover="3.2.0">
-  <project timestamp="1734060243164" name="All files">
-    <metrics statements="171" coveredstatements="164" conditionals="21" coveredconditionals="20" methods="9" coveredmethods="8" elements="201" coveredelements="192" complexity="0" loc="171" ncloc="171" packages="8" files="9" classes="9"/>
+<coverage generated="1734448850627" clover="3.2.0">
+  <project timestamp="1734448850627" name="All files">
+    <metrics statements="175" coveredstatements="168" conditionals="21" coveredconditionals="20" methods="9" coveredmethods="8" elements="205" coveredelements="196" complexity="0" loc="175" ncloc="175" packages="8" files="9" classes="9"/>
     <package name="src">
       <metrics statements="7" coveredstatements="0" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="0"/>
-      <file name="main.jsx" path="C:\Users\gabri\Desktop\ReactViteProject\src\main.jsx">
+      <file name="main.jsx" path="C:\Users\gabri\Desktop\Files\Codes\ReactProjects\ReactViteProject\src\main.jsx">
         <metrics statements="7" coveredstatements="0" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="0"/>
         <line num="1" count="0" type="cond" truecount="0" falsecount="1"/>
         <line num="2" count="0" type="stmt"/>
@@ -16,9 +16,9 @@
       </file>
     </package>
     <package name="src.components.Button">
-      <metrics statements="11" coveredstatements="11" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-      <file name="index.jsx" path="C:\Users\gabri\Desktop\ReactViteProject\src\components\Button\index.jsx">
-        <metrics statements="11" coveredstatements="11" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <metrics statements="12" coveredstatements="12" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="index.jsx" path="C:\Users\gabri\Desktop\Files\Codes\ReactProjects\ReactViteProject\src\components\Button\index.jsx">
+        <metrics statements="12" coveredstatements="12" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
         <line num="4" count="1" type="stmt"/>
         <line num="5" count="1" type="stmt"/>
@@ -30,20 +30,25 @@
         <line num="16" count="1" type="stmt"/>
         <line num="17" count="1" type="stmt"/>
         <line num="18" count="1" type="stmt"/>
+        <line num="19" count="1" type="stmt"/>
       </file>
     </package>
     <package name="src.components.Loading">
-      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-      <file name="index.jsx" path="C:\Users\gabri\Desktop\ReactViteProject\src\components\Loading\index.jsx">
-        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="index.jsx" path="C:\Users\gabri\Desktop\Files\Codes\ReactProjects\ReactViteProject\src\components\Loading\index.jsx">
+        <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
       </file>
     </package>
     <package name="src.components.PostCard">
-      <metrics statements="24" coveredstatements="24" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-      <file name="index.jsx" path="C:\Users\gabri\Desktop\ReactViteProject\src\components\PostCard\index.jsx">
-        <metrics statements="18" coveredstatements="18" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <metrics statements="22" coveredstatements="22" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="index.jsx" path="C:\Users\gabri\Desktop\Files\Codes\ReactProjects\ReactViteProject\src\components\PostCard\index.jsx">
+        <metrics statements="16" coveredstatements="16" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
         <line num="4" count="1" type="stmt"/>
         <line num="5" count="1" type="stmt"/>
@@ -60,10 +65,8 @@
         <line num="20" count="1" type="stmt"/>
         <line num="21" count="1" type="stmt"/>
         <line num="22" count="1" type="stmt"/>
-        <line num="24" count="1" type="stmt"/>
-        <line num="41" count="1" type="stmt"/>
       </file>
-      <file name="mock.js" path="C:\Users\gabri\Desktop\ReactViteProject\src\components\PostCard\mock.js">
+      <file name="mock.js" path="C:\Users\gabri\Desktop\Files\Codes\ReactProjects\ReactViteProject\src\components\PostCard\mock.js">
         <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -75,7 +78,7 @@
     </package>
     <package name="src.components.Posts">
       <metrics statements="14" coveredstatements="14" conditionals="2" coveredconditionals="2" methods="0" coveredmethods="0"/>
-      <file name="index.jsx" path="C:\Users\gabri\Desktop\ReactViteProject\src\components\Posts\index.jsx">
+      <file name="index.jsx" path="C:\Users\gabri\Desktop\Files\Codes\ReactProjects\ReactViteProject\src\components\Posts\index.jsx">
         <metrics statements="14" coveredstatements="14" conditionals="2" coveredconditionals="2" methods="0" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
         <line num="6" count="1" type="stmt"/>
@@ -95,7 +98,7 @@
     </package>
     <package name="src.components.Search">
       <metrics statements="24" coveredstatements="24" conditionals="3" coveredconditionals="3" methods="3" coveredmethods="3"/>
-      <file name="index.jsx" path="C:\Users\gabri\Desktop\ReactViteProject\src\components\Search\index.jsx">
+      <file name="index.jsx" path="C:\Users\gabri\Desktop\Files\Codes\ReactProjects\ReactViteProject\src\components\Search\index.jsx">
         <metrics statements="24" coveredstatements="24" conditionals="3" coveredconditionals="3" methods="3" coveredmethods="3"/>
         <line num="1" count="1" type="stmt"/>
         <line num="4" count="1" type="cond" truecount="1" falsecount="0"/>
@@ -124,9 +127,9 @@
       </file>
     </package>
     <package name="src.templates.Home">
-      <metrics statements="58" coveredstatements="58" conditionals="12" coveredconditionals="12" methods="4" coveredmethods="4"/>
-      <file name="index.jsx" path="C:\Users\gabri\Desktop\ReactViteProject\src\templates\Home\index.jsx">
-        <metrics statements="58" coveredstatements="58" conditionals="12" coveredconditionals="12" methods="4" coveredmethods="4"/>
+      <metrics statements="59" coveredstatements="59" conditionals="12" coveredconditionals="12" methods="4" coveredmethods="4"/>
+      <file name="index.jsx" path="C:\Users\gabri\Desktop\Files\Codes\ReactProjects\ReactViteProject\src\templates\Home\index.jsx">
+        <metrics statements="59" coveredstatements="59" conditionals="12" coveredconditionals="12" methods="4" coveredmethods="4"/>
         <line num="1" count="1" type="stmt"/>
         <line num="11" count="1" type="cond" truecount="1" falsecount="0"/>
         <line num="12" count="12" type="stmt"/>
@@ -176,20 +179,21 @@
         <line num="69" count="12" type="stmt"/>
         <line num="71" count="12" type="cond" truecount="1" falsecount="0"/>
         <line num="72" count="3" type="stmt"/>
-        <line num="73" count="12" type="cond" truecount="2" falsecount="0"/>
-        <line num="74" count="8" type="stmt"/>
-        <line num="76" count="12" type="stmt"/>
-        <line num="79" count="12" type="stmt"/>
-        <line num="80" count="12" type="stmt"/>
+        <line num="73" count="3" type="stmt"/>
+        <line num="75" count="12" type="cond" truecount="2" falsecount="0"/>
+        <line num="76" count="8" type="stmt"/>
+        <line num="78" count="12" type="stmt"/>
         <line num="81" count="12" type="stmt"/>
         <line num="82" count="12" type="stmt"/>
         <line num="83" count="12" type="stmt"/>
-        <line num="89" count="12" type="stmt"/>
+        <line num="84" count="12" type="stmt"/>
+        <line num="85" count="12" type="stmt"/>
+        <line num="91" count="12" type="stmt"/>
       </file>
     </package>
     <package name="src.utils">
       <metrics statements="31" coveredstatements="31" conditionals="3" coveredconditionals="3" methods="1" coveredmethods="1"/>
-      <file name="load-posts.js" path="C:\Users\gabri\Desktop\ReactViteProject\src\utils\load-posts.js">
+      <file name="load-posts.js" path="C:\Users\gabri\Desktop\Files\Codes\ReactProjects\ReactViteProject\src\utils\load-posts.js">
         <metrics statements="31" coveredstatements="31" conditionals="3" coveredconditionals="3" methods="1" coveredmethods="1"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>

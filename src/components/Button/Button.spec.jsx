@@ -7,13 +7,13 @@ import { Button } from '.';
 describe('<Button />', () => {
   it('should render the button with the text "Load more"', () => {
     const fn = vi.fn();
-    render(<Button text="Load more" onClick={fn} />);
+    render(<Button text="Load more" onClick={fn} modifier="test" />);
     expect.assertions(2);
 
     const button = screen.getByRole('button', { name: /load more/i });
 
     expect(button).toBeInTheDocument();
-    expect(button).toHaveAttribute('class', 'button');
+    expect(button).toHaveAttribute('class', 'button test');
   });
 
   it('should call function on click', async () => {

@@ -69,7 +69,9 @@ export const Home = () => {
       <Search placeholder="Search" value={searchValue} onChange={handleChange} onFocus="Type something..." />
 
       {isLoading ? (
-        <Loading />
+        <div className="loading-container">
+          <Loading />
+        </div>
       ) : filteredPosts.length > 0 || searchValue === '' ? (
         <Posts posts={filteredPosts} />
       ) : (
@@ -79,8 +81,8 @@ export const Home = () => {
       <div className="button-container">
         {!searchValue && (
           <>
-            <Button disabled={page === 0} text="←" onClick={handlePreviousPage} />
-            <Button disabled={noMorePages} text="→" onClick={handleNextPage} />
+            <Button disabled={page === 0} text="←" onClick={handlePreviousPage} modifier="prev" />
+            <Button disabled={noMorePages} text="→" onClick={handleNextPage} modifier="next" />
           </>
         )}
       </div>
